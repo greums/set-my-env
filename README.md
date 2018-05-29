@@ -1,18 +1,18 @@
 # set-my-env
 
-# PIP
+### PIP
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo --set-home python get-pip.py
 rm get-pip.py
 ```
 
-# PIP COMPLETION
+### PIP COMPLETION
 ```
 pip completion --bash >> ~/.bashrc
 ```
 
-# PYPI CACHE
+### PYPI CACHE
 ```
 pip install --user --upgrade devpi-server
 ```
@@ -23,7 +23,7 @@ devpi-server --start --threads `nproc`
 (crontab -l 2>/dev/null; echo "@reboot $HOME/.local/bin/devpi-server --start --threads `nproc`") | crontab -
 ```
 
-# VIRTUALENWRAPPER
+### VIRTUALENWRAPPER
 ```
 pip install --user --upgrade virtualenvwrapper
 ```
@@ -38,16 +38,13 @@ source ~/.local/bin/virtualenvwrapper.sh
 EOF
 ```
 
-# GIT-LEGIT
+### GIT-LEGIT
 ```
 pip install --user --upgrade legit
-```
-
-```
 legit install
 ```
 
-# GIT-LINT
+### GIT-LINT
 ```
 pip install --user --upgrade git-lint
 ```
@@ -60,7 +57,7 @@ chmod a+x ~/.git-templates/hooks/pre-commit
 sudo ln -s `which pre-commit.git-lint.sh` /usr/share/git-core/templates/hooks/pre-commit
 ```
 
-# POWERLINE-SHELL
+### POWERLINE-SHELL
 [powerline-shell](https://github.com/banga/powerline-shell)
 
 ```
@@ -98,7 +95,7 @@ fi
 EOF
 ```
 
-# NODE & NPM
+### NODE & NPM
 ```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
