@@ -100,3 +100,11 @@ EOF
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+
+### HEROKU CLI
+```
+curl https://cli-assets.heroku.com/install-standalone.sh | sh
+```
+```
+heroku update && heroku plugins:install autocomplete && heroku autocomplete
+```
