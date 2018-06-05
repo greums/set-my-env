@@ -108,3 +108,6 @@ curl https://cli-assets.heroku.com/install-standalone.sh | sh
 ```
 heroku update && heroku plugins:install autocomplete && heroku autocomplete
 ```
+```
+printf "$(heroku autocomplete:script bash)" >> ~/.bashrc; source ~/.bashrc
+```
