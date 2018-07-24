@@ -3,10 +3,6 @@
 ### PIP
 ```
 curl https://bootstrap.pypa.io/get-pip.py | sudo -H python
-```
-
-### PIP COMPLETION
-```
 pip completion --bash >> ~/.bashrc
 ```
 
@@ -25,6 +21,7 @@ devpi-server --start --threads `nproc`
 
 ```
 curl https://raw.githubusercontent.com/kennethreitz/pipenv/master/get-pipenv.py | sudo -H python
+echo 'eval "$(pipenv --completion)"' >> ~/.bashrc
 ```
 
 ### VIRTUALENWRAPPER (deprecated, prefer pipenv)
