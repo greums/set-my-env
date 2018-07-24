@@ -2,9 +2,7 @@
 
 ### PIP
 ```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-sudo --set-home python get-pip.py
-rm get-pip.py
+curl https://bootstrap.pypa.io/get-pip.py | sudo -H python
 ```
 
 ### PIP COMPLETION
@@ -23,7 +21,13 @@ devpi-server --start --threads `nproc`
 (crontab -l 2>/dev/null; echo "@reboot $HOME/.local/bin/devpi-server --start --threads `nproc`") | crontab -
 ```
 
-### VIRTUALENWRAPPER
+### PIPENV
+
+```
+curl https://raw.githubusercontent.com/kennethreitz/pipenv/master/get-pipenv.py | sudo -H python
+```
+
+### VIRTUALENWRAPPER (deprecated, prefer pipenv)
 ```
 pip install --user --upgrade virtualenvwrapper
 ```
