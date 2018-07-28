@@ -58,6 +58,11 @@ chmod a+x ~/.git-templates/hooks/pre-commit
 sudo ln -s `which pre-commit.git-lint.sh` /usr/share/git-core/templates/hooks/pre-commit
 ```
 
+### GIT WEBUI
+```
+curl https://raw.githubusercontent.com/alberthier/git-webui/master/install/installer.sh | bash
+```
+
 ### POWERLINE-SHELL
 [powerline-shell](https://github.com/banga/powerline-shell)
 
