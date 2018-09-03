@@ -42,7 +42,7 @@ EOF
 ### GIT-LEGIT
 ```
 pip install --user --upgrade legit
-legit install
+legit --install
 ```
 
 ### GIT-LINT
