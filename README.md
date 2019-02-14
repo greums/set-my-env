@@ -30,7 +30,10 @@ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.p
 ```
 
 ```
-poetry completions bash > /etc/bash_completion.d/poetry.bash-completion
+~/.poetry/bin/poetry completions bash > poetry.bash-completion
+sudo mv poetry.bash-completion /etc/bash_completion.d/
+sudo chown root:root /etc/bash_completion.d/poetry.bash-completion
+sudo chmod 644 /etc/bash_completion.d/poetry.bash-completion
 ```
 
 ### VIRTUALENWRAPPER
