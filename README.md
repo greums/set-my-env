@@ -23,6 +23,14 @@ devpi-server --start --threads `nproc`
 pip install --user pew
 ```
 
+```
+cat >> .bashrc << 'EOF'
+
+export WORKON_HOME=$HOME/.virtualenvs
+
+EOF
+```
+
 ### PIPENV
 
 ```
