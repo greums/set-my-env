@@ -17,6 +17,12 @@ devpi-server --start --threads `nproc`
 (crontab -l 2>/dev/null; echo "@reboot $HOME/.local/bin/devpi-server --start --threads `nproc`") | crontab -
 ```
 
+### PEW
+
+```
+pip install --user pew
+```
+
 ### PIPENV
 
 ```
