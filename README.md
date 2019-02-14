@@ -60,6 +60,7 @@ cat >> .bashrc << 'EOF'
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Projets
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source ~/.local/bin/virtualenvwrapper.sh
 
 EOF
