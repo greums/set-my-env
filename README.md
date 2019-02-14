@@ -24,7 +24,16 @@ curl https://raw.githubusercontent.com/kennethreitz/pipenv/master/get-pipenv.py 
 echo 'eval "$(pipenv --completion)"' >> ~/.bashrc
 ```
 
-### VIRTUALENWRAPPER (deprecated, prefer pipenv)
+### POETRY
+```
+curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+```
+
+```
+poetry completions bash > /etc/bash_completion.d/poetry.bash-completion
+```
+
+### VIRTUALENWRAPPER
 ```
 pip install --user --upgrade virtualenvwrapper
 ```
