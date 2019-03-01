@@ -27,6 +27,7 @@ pip install --user pew
 cat >> .bashrc << 'EOF'
 
 export WORKON_HOME=$HOME/.virtualenvs
+source $(pew shell_config)
 
 EOF
 ```
